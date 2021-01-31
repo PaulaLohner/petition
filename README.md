@@ -12,4 +12,4 @@ It is also possible to check for other users and see from where they are: <br><b
 
 ![all-users](https://github.com/PaulaLohner/petition/blob/main/Screen%20Shot%202021-01-31%20at%2021.37.16.png) <br><br>
 
-The tech stack used in this project was Javascript, HTML, CSS and Handlebars for the client side while Node.js and PostgreSQL were used on theserver side.
+The tech stack used in this project was Javascript, HTML, CSS and Handlebars for the client side while Node.js and PostgreSQL were used on the server side.
