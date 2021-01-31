@@ -1,0 +1,45 @@
+<div class="description">
+    <p>Always dreamed of stuffing your face with Porco Rosso's spaghetti? Maybe the 
+    heartwarming ramen from Ponyo that looks perfect for a cold rainy day? Ever thought 
+    that being transfigured into a pig is not so bad when you get to indulge
+    in such banquet like Chihiro's parents in Spirited Away? <br><br>Then sign this
+    petition to demand Studio Ghibli bring all of our cravings to life! <br><br> It's
+    their own fault for making carbs look so good...</p>
+
+</div>
+
+
+<div class="registration">
+
+    <h3>REGISTER TO MAKE A CLAIM:</h3>
+
+    {{#if error}}
+        <p class="error"> Seems like something went wrong... Please try again! </p> 
+    {{/if}}
+
+    <form class="registration" method="POST">
+
+        <label for="first"> FIRST NAME</label>
+        <input type="text" name="first" minlength="2"  autocomplete="off" required>
+
+        <label for="last"> LAST NAME</label>
+        <input type="text" name="last"  minlength="2" autocomplete="off" required>
+
+        <label for="email"> EMAIL </label>
+        <input type="text" name="email"  minlength="2" autocomplete="off" required>
+
+        <label for="password"> PASSWORD </label>
+        <input type="password" name="password"  minlength="2" autocomplete="off" required>
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <button id="submit" type="submit"> SUBMIT </button>
+
+    </form>
+
+    <p> Already have an account? <a href="/login">Login!</a></p>
+
+
+
+</div>
+

@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 2rem;
+    background-color: #ffe1a8;
+}
+
+header,
+h1 {
+    text-align: center;
+    font-family: "Righteous", cursive;
+    background-color: white;
+}
+
+h2,
+h3,
+h5,
+p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    background-image: url("header_background.png");
+    background-size: 30%;
+}
+
+.sign-canvas {
+    border: 1px solid black;
+    margin: 10px;
+    width: 500px;
+    height: 150px;
+}
+
+form.login {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align-last: center;
+    color: white;
+    /* align-items: flex-end; */
+}
+
+form.edit-profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50vw;
+    top: 50vh;
+    transform: translateY(-45%) translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    background-color: #e26d5c;
+    padding: 10px;
+    color: white;
+    position: absolute;
+}
+
+form.add-profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.registration {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50vw;
+    top: 50vh;
+    transform: translateY(-45%) translateX(100%);
+    font-family: "Roboto", sans-serif;
+    background-color: #e26d5c;
+    padding: 10px;
+    color: white;
+}
+
+div.login {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translateY(-45%) translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    background-color: #e26d5c;
+    padding: 10px;
+    color: white;
+}
+
+div.add-profile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translateY(-45%) translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    background-color: #e26d5c;
+    /* border: #e26d5c dotted 2px; */
+    padding: 10px;
+    color: white;
+}
+
+div.petition {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    border: #e26d5c dotted 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+}
+
+div.thanks {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%) translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    border: #e26d5c dotted 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+}
+
+div.signers-list {
+    /* height: 100vh; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%) translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    border: #e26d5c dotted 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+}
+
+div.edit-profile {
+    padding: 20px;
+}
+
+div.city-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%) translateX(-50%);
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    border: #e26d5c dotted 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+}
+
+.description {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    border: #e26d5c dotted 2px;
+}
+
+.description p {
+    text-align: justify;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 0.5em;
+}
+
+div.background-gif {
+    width: 600px;
+    height: 350px;
+    background-image: url("header_background.png");
+    background-size: cover;
+}
+
+.logout {
+    position: absolute;
+    right: 10px;
+    top: 15%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 20px;
+}

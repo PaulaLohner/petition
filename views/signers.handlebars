@@ -1,0 +1,27 @@
+<div class="signers-list">
+
+    <h3>See who already joined the cause:</h3>
+
+
+    {{#signers}}
+
+        {{#if url}}
+            <p> <a class="link" href="{{url}}" target="_blank"> {{first}} {{last}}</a>
+            {{#if age}} | {{age}}{{/if}} {{#if city}} | <a href="/signers/{{city}}">{{city}}</a> {{/if}}</p>
+
+        {{else}}
+
+            <p> {{first}} {{last}} {{#if age}} | {{age}}{{/if}} {{#if city}} | <a href="/signers/{{city}}">{{city}}</a> {{/if}}</p>
+
+        {{/if}}
+
+    {{/signers}}
+
+    <h5>Click <a href="/thanks">here</a> to get back to your signature!</h5>
+    
+
+
+</div>
+
+
+{{> logout}}

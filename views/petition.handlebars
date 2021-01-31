@@ -1,0 +1,27 @@
+<div class="petition">
+
+    <h3>Please sign this petition to make all food as mouthwatering as in Studio Ghibli's movies!</h3>
+
+    <form class="petition" method="post">
+
+
+        <div class="sign-canvas">
+
+            <canvas id="sign" width="500" height="150"></canvas>
+            <input type="hidden" name="canvasValue" id="canvasValue" >
+            <input type="hidden" name="canvasCheck" id="canvasCheck"/>
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        </div>
+
+        <button id="submit" type="submit"> SUBMIT </button>
+
+
+
+    </form>
+
+</div>
+
+{{> logout}}
+
+<script src="/script.js"></script>

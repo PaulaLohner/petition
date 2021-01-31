@@ -1,0 +1,31 @@
+<div class="add-profile">
+
+    <h3>Could you please tell us a little bit more about yourself?</h3>
+    <p>This is an optional stage, if you are a misterious person please click continue...</p>
+
+    {{#if error}}
+        <p class="error"> Seems like something went wrong... Please try again! </p> 
+    {{/if}}
+
+    <form class="add-profile" method="POST">
+
+        <label for="age"> AGE </label>
+        <input type="text" name="age"   autocomplete="off">
+
+        <label for="city"> CITY </label>
+        <input type="text" name="city"   autocomplete="off">
+
+        <label for="url"> HOMEPAGE </label>
+        <input type="text" name="url"  autocomplete="off">
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <button id="submit" type="submit"> CONTINUE </button>
+
+    </form>
+
+
+
+</div>
+
+<a href="/logout" class="logout">LOGOUT</a>

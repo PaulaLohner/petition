@@ -1,0 +1,18 @@
+<div class="city-list">
+
+    <h3>You are not alone in your quest for the perfect banquet!</h3>
+    
+    <h4>Your neighbours from {{city}} also celebrate perfect meals:</h4>
+    
+
+    {{#signers}}
+        <p>{{first}} {{last}} {{#if age}} | {{age}}{{/if}} {{#if city}} | {{city}}</a> {{/if}} </p>
+    {{/signers}}
+
+    <h5>Click <a href="/signers">here</a> to see all {{count}} supporters :)</h5>
+
+    
+
+</div>
+
+{{> logout}}

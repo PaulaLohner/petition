@@ -1,0 +1,27 @@
+<div class="login">
+
+    <h3>Please login to access your amazing account:</h3>
+
+    {{#if error}}
+        <p class="error"> Seems like something went wrong... Please try again! </p> 
+    {{/if}}
+
+    <form class="login" method="POST">
+
+        <label for="email"> EMAIL </label>
+        <input type="text" name="email"  minlength="2" autocomplete="off" required>
+
+        <label for="password"> PASSWORD </label>
+        <input type="password" name="password"  minlength="2" autocomplete="off" required>
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <button id="submit" type="submit"> SUBMIT </button>
+
+    </form>
+
+    <p> Still haven't got an account? Click <a href="/register">here</a> to create one!</p>
+
+
+
+</div>

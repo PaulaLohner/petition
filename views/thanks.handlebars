@@ -1,0 +1,22 @@
+<div class="thanks">
+
+    <h2>Thank you {{first}} for joining the fight for a prettier and tastier world!</h2>
+
+    <h3>Here's what your signature looks like to us:</h3>
+    <div class="sign-canvas">
+
+        <img src="{{sigImg}}" alt="signature">
+
+    </div>
+
+    <form action="/thanks/delete" method="POST">
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+      <button>Delete Signature</button>
+    </form> 
+
+    <h5>Click <a href="/signers">here</a> to see all {{count}} cause supporters :)</h5>
+
+    
+</div>
+
+{{> logout}}

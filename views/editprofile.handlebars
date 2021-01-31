@@ -1,0 +1,41 @@
+<div class="edit-profile">
+
+    <h2>EDIT PROFILE</h2>
+
+    {{!-- {{#if error}}
+        <p class="error"> Seems like something went wrong... Please try again! </p> 
+    {{/if}} --}}
+
+    <form class="edit-profile" action="/profile/edit" method="POST">
+
+        <label for="first"> FIRST NAME </label>
+        <input type="text" name="first" placeholder="first name"  autocomplete="off">
+
+        <label for="last"> LAST NAME </label>
+        <input type="text" name="last" placeholder="last name"  autocomplete="off">
+
+        <label for="email"> EMAIL </label>
+        <input type="text" name="email" placeholder="email"  autocomplete="off">
+
+        <label for="password"> PASSWORD </label>
+        <input type="password" name="password" placeholder="password"  autocomplete="off">
+
+        <label for="age"> AGE </label>
+        <input type="text" name="age" placeholder="age"  autocomplete="off">
+
+        <label for="city"> CITY </label>
+        <input type="text" name="city" placeholder="city"  autocomplete="off">
+
+        <label for="url"> HOMEPAGE </label>
+        <input type="text" name="url" placeholder="homepage"  autocomplete="off">
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <button id="submit" type="submit"> SAVE CHANGES </button>
+
+    </form>
+
+
+</div>
+
+<a href="/logout" class="logout">LOGOUT</a>
